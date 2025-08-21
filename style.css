@@ -17,6 +17,8 @@
       margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; 
       background:var(--bg); color:var(--text); line-height:1.7; letter-spacing:.2px;
     }
+      
+
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline}
     .container{max-width:var(--maxw); margin-inline:auto; padding:28px}
@@ -32,8 +34,7 @@
     .hero .card{background:var(--card); border:1px solid #eceae6; padding:28px; border-radius:var(--radius); box-shadow:var(--shadow)}
     h1{font-size:clamp(28px, 4vw, 44px); line-height:1.15; margin:0 0 8px}
     .subtitle{font-weight:500; color:var(--muted); margin:0 0 10px}
-    .pill{display:inline-flex; align-items:center; gap:8px; padding:.4rem .75rem; border-radius:999px; border:1px solid #e6e4df; background:var(--bg-alt); font-size:.925rem; margin:.25rem .25rem 0 0}
-    .pill .dot{width:8px; height:8px; border-radius:50%; background:var(--accent)}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:.4rem .6rem; border-radius:999px; border:1px solid #e6e4df; background:var(--bg-alt); font-size:.925rem; margin:.25rem .25rem 0 0}
     .kpis{display:flex; flex-wrap:wrap; gap:16px; margin-top:18px}
     .kpi{background:var(--card); border:1px solid #eceae6; border-radius:14px; padding:14px 16px; min-width:160px; box-shadow:var(--shadow)}
     .kpi b{font-size:1.2rem}
@@ -78,3 +79,25 @@
       body{background:#fff}
       .card{box-shadow:none}
     }
+
+
+    .pills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* alineadas a la izquierda */
+        gap: .5rem;
+        margin-top: 2rem;
+      }
+      
+      /* Cada pill */
+      .pill {
+        display: flex;
+        align-items: center;     /* centra verticalmente */
+        justify-content: center; /* centra el texto horizontalmente */
+        padding: .4rem .75rem;
+        border-radius: 999px;
+        border: 1px solid #e6e4df;
+        background: var(--bg-alt);
+        font-size: .925rem;
+        margin: .25rem;
+      }
