@@ -101,3 +101,7 @@
         font-size: .925rem;
         margin: .25rem;
       }
+
+      section.card {
+        margin-bottom: 3rem;
+      }

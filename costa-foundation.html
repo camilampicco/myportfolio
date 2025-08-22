@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camila María Picco — Costa Foundation Redesign</title>
+  <meta name="description" content="Case study: Redesign of Costa Foundation website by Camila María Picco, UX Researcher and Designer." />
+  <meta property="og:title" content="Camila María Picco — UX Research Portfolio" />
+  <meta property="og:description" content="UX Research • Usability Testing • IA • Heuristics • Prototyping • Coding basics (HTML/CSS/SQL)." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f766e" />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Script: filtering + smooth scroll -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const radios = document.querySelectorAll('input[name="filter"]');
+      const items = document.querySelectorAll('[data-type]');
+      radios.forEach(r => r.addEventListener('change', () => {
+        const val = document.querySelector('input[name="filter"]:checked').value;
+        items.forEach(el => {
+          el.style.display = (val === 'all' || el.dataset.type.includes(val)) ? '' : 'none';
+        });
+      }));
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if (id.length > 1) {
+            e.preventDefault();
+            document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="index.html" class="home-link"><strong>Camila María Picco</strong></a>
+        </div>
+        <div class="links" aria-label="Sections">
+          <a class="button" href="#overview">Overview</a>
+          <a class="button" href="#process">Process</a>
+          <a class="button" href="#outcomes">Outcomes</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <h1>Website Redesign: Costa Foundation</h1>
+      <p class="subtitle">Redesigning a donation-focused website through heuristics, UX laws and competitor benchmarking.</p>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="card fade-in two-columns">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          As part of a broader effort, I led the redesign of several websites, one of the most relevant being the 
+          <strong><a href="https://www.costa.co.uk/sustainability/communities/costa-foundation">Costa Foundation</a></strong> site. The challenge was unique: we didn’t have direct access to end users. 
+          To overcome this, we started with an in-depth <em>benchmarking</em> analysis of major competitors’ donation flows 
+          and applied UX Laws and usability heuristics to design a more effective experience.
+        </p>
+        <p>
+          The main objective: <strong>increase donations</strong> by simplifying the path to the "Donate" call-to-action (CTA).
+        </p>
+      </div>
+      <div>
+        <img src="images/costa-overview.png" alt="Costa Foundation redesign overview">
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="card fade-in">
+      <h2>Process</h2>
+      <div class="two-columns">
+        <div>
+          <p>Our approach followed a research-informed redesign strategy:</p>
+          <ul>
+            <li>Benchmarking competitors’ donation flows</li>
+            <li>Analyzing UI styles, donation options and steps until CTA</li>
+            <li>Applying UX Laws and Heuristics for clarity and usability</li>
+            <li>Designing a new responsive website, adapting seamlessly from mobile to desktop</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/costa-process.png" alt="Redesign process Costa Foundation">
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section id="outcomes" class="card fade-in two-columns">
+      <div>
+        <h2>Outcomes & Impact</h2>
+        <ul>
+          <li>Improved navigation: moved from a hidden hamburger menu to explicit navigation options</li>
+          <li>Reduced the number of steps required to reach the Donate CTA</li>
+          <li>Redesigned the donation flow for greater clarity and efficiency</li>
+          <li>Created a responsive design ensuring seamless experience on mobile and desktop</li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/costa-outcomes.png" alt="Outcomes of Costa Foundation redesign">
+      </div>
+    </section>
+
+    <!-- Learnings -->
+    <section class="card fade-in">
+      <h2>Key Learnings</h2>
+      <p>
+        This project highlighted the value of <strong>benchmarking and heuristic evaluation</strong> when direct access to users 
+        is limited. Even without direct testing, we were able to design meaningful improvements by analyzing competitor strategies 
+        and grounding decisions in UX principles.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
