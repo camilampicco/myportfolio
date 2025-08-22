@@ -1,0 +1,151 @@
+<html lang="en"></html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camila María Picco — UX Research Portfolio</title>
+  <meta name="description" content="Portfolio of Camila María Picco — UX Researcher with 3.5 years experience. Case studies, skills, and contact." />
+  <meta property="og:title" content="Camila María Picco — UX Research Portfolio" />
+  <meta property="og:description" content="UX Research • Usability Testing • IA • Heuristics • Prototyping • Coding basics (HTML/CSS/SQL)." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const radios = document.querySelectorAll('input[name="filter"]');
+      const items = document.querySelectorAll('[data-type]');
+      radios.forEach(r => r.addEventListener('change', () => {
+        const val = document.querySelector('input[name="filter"]:checked').value;
+        items.forEach(el => {
+          el.style.display = (val === 'all' || el.dataset.type.includes(val)) ? '' : 'none';
+        });
+      }));
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', e=>{
+          const id=a.getAttribute('href');
+          if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'}); }
+        })
+      })
+    });
+  </script>
+</head>
+    <body>
+        <header>
+            <div class="container">
+              <nav aria-label="Primary">
+                <div class="brand">
+                  <span class="dot" aria-hidden="true"></span>
+                  <a href="index.html" class="home-link"><strong>Camila María Picco</strong></a>
+                </div>
+                <div class="links" aria-label="Sections">
+                  <a class="button" href="#work">Work</a>
+                  <a class="button" href="#skills">Skills</a>
+                  <a class="button" href="#contact">Contact</a>
+                </div>
+              </nav>
+            </div>
+          </header>
+        <main class="container">
+      
+          <!-- Hero Section -->
+          <section class="hero fade-in">
+            <h1>From Zero to Insights: PRMs Research Program</h1>
+            <p class="subtitle">Transforming partner relationship management through evidence-based research and actionable insights.</p>
+          </section>
+      
+          <!-- Overview -->
+          <section class="card fade-in two-columns">
+            <div>
+              <h2>Overview</h2>
+              <p>The PRM  Program was designed to uncover key insights into how partners interact with Adobe products, 
+                identify pain points, and inform product decisions that drive engagement and satisfaction. <br>
+                <br>
+                This program was designed for Adobe to enable their clients to share marketing assets with their own customers, 
+                provide visibility into deals and their status, and simplify the communication of updates and news, particularly 
+                during campaign heavy months such as Christmas and New Year.</p>
+              <div class="kpis" role="list" aria-label="Key highlights">
+                <div class="kpi" role="listitem">Qualitative user interviews</div>
+                <div class="kpi" role="listitem">Usability testing rounds</div>
+                <div class="kpi" role="listitem">Quantitative data</div>
+                <div class="kpi" role="listitem">Implementation & Iteration</div>
+              </div>
+            </div>
+            <div>
+              <img src="images/overview-diagram.png" alt="PRMs Research Overview">
+            </div>
+          </section>
+      
+          <!-- My Role -->
+          <section class="card fade-in two-columns">
+            <div>
+              <h2>My Role</h2>
+              <p>I led the end-to-end research process, from scoping objectives to recruiting participants, 
+                executing interviews and usability testing, and synthesising findings into actionable recommendations. <br>
+                <br>
+                My primary responsibility was to act as a communication bridge between the PRM provider and Adobe. 
+                On one hand, I collaborated with the PRM vendor using technical terminology and by reviewing the backend code of the system. 
+                On the other hand, I worked directly with Adobe to understand their user-facing needs, 
+                clarifying what could or could not be achieved within the PRM's capabilities.
+                <br>
+                <br>
+                Once we aligned on goals and defined what was feasible, I recruited participants and test the program.</p>
+              <div class="pills-container">
+                <span class="pill">User Interviews</span>
+                <span class="pill">Usability Testing</span>
+                <span class="pill">Synthesis & Analysis</span>
+                <span class="pill">Stakeholder Collaboration</span>
+              </div>
+            </div>
+            <div>
+              <img src="images/my-role.png" alt="My Role in Research">
+            </div>
+          </section>
+      
+          <!-- Process -->
+          <section class="card fade-in">
+            <h2>Process</h2>
+            <div class="two-columns">
+              <div>
+                <p>The research followed a mixed-method approach:</p>
+                <ul>
+                  <li>Scoping & Objective Alignment</li>
+                  <li>Recruitment of partner participants</li>
+                  <li>Qualitative interviews & usability tests</li>
+                  <li>Synthesis into actionable insights</li>
+                  <li>Present findings and recommendations</li>
+                </ul>
+              </div>
+              <div>
+                <img src="images/process-flow.png" alt="Research Process Flow">
+              </div>
+            </div>
+          </section>
+      
+          <!-- Outcomes -->
+          <section class="card fade-in two-columns">
+            <div>
+              <h2>Outcomes & Impact</h2>
+              <ul>
+                <li>Improved partner onboarding flow</li>
+                <li>Enhanced platform usability</li>
+                <li>Higher engagement and satisfaction metrics</li>
+                <li>Evidence-based prioritisation of new features</li>
+              </ul>
+            </div>
+            <div>
+              <img src="images/outcomes.png" alt="Research Outcomes">
+            </div>
+          </section>
+      
+          <!-- Learnings -->
+          <section class="card fade-in">
+            <h2>Key Learnings</h2>
+            <p>Through this program, I reinforced the importance of continuous discovery, clear communication with stakeholders, 
+                and translating research into actionable product decisions.</p>
+          </section>
+      
+        </main>
+      </body>
+      </html>
