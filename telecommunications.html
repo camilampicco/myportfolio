@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camila María Picco — PRM Redesign for Client B</title>
+  <meta name="description" content="Case study: Redesign of PRMs for Client B, a telecommunications company. Merging two core businesses into one unified platform." />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Camila María Picco — PRM Redesign for Client B" />
+  <meta property="og:description" content="UX Research • PRM Redesign • Data Analysis • Design Thinking" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0f766e" />
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Smooth Scroll -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if (id.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(id);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <!-- Brand -->
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="index.html" class="home-link"><strong>Camila María Picco</strong></a>
+        </div>
+        <!-- Menu (top-right buttons) -->
+        <div class="links" aria-label="Sections">
+          <a class="button" href="#context">Context</a>
+          <a class="button" href="#challenge">Challenge</a>
+          <a class="button" href="#approach">Approach</a>
+          <a class="button" href="#outcomes">Outcomes</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <h1>PRM Redesign for Client B</h1>
+      <p class="subtitle">Unifying two core businesses into a single streamlined PRM for a leading telecommunications company.</p>
+    </section>
+
+    <!-- Context -->
+    <section id="context" class="card fade-in two-columns">
+      <div>
+        <h2>Context</h2>
+        <p>
+          Client B, a telecommunications company, manages two core business areas. Each had its own PRM (Partner Relationship Management) system, 
+          but this created inefficiencies: duplicated content, outdated information, and a fragmented user experience.  
+          To solve this, the company decided to merge both PRMs into a single unified platform.
+        </p>
+      </div>
+      <div>
+        <img src="images/context.png" alt="Context illustration placeholder">
+      </div>
+    </section>
+
+    <!-- Challenge -->
+    <section id="challenge" class="card fade-in two-columns">
+      <div>
+        <h2>Challenge</h2>
+        <p>
+          The original PRM hosted both business units in visibly separated sections, leading to redundancy and confusion.  
+          The redesign needed to:
+        </p>
+        <ul>
+          <li>Consolidate all content into one streamlined system</li>
+          <li>Preserve clarity between <strong>Core Business 1</strong> and <strong>Core Business 2</strong></li>
+          <li>Improve usability and efficiency for internal teams and external partners</li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/challenge.png" alt="Challenge diagram placeholder">
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="card fade-in">
+      <h2>Approach</h2>
+      <div class="two-columns">
+        <div>
+          <ul>
+            <li>Analyzed traffic and data over a full calendar year</li>
+            <li>Redesigned the PRM with a <strong>unified navigation menu</strong></li>
+            <li>Built the <strong>Assets page</strong> from scratch, in collaboration with developers and business managers</li>
+            <li>Conducted iterative <strong>user testing</strong> with end-users</li>
+            <li>Followed a full <strong>design thinking process</strong></li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/approach.png" alt="Approach workflow placeholder">
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section id="outcomes" class="card fade-in two-columns">
+      <div>
+        <h2>Outcomes & Impact</h2>
+        <ul>
+          <li>Reduced redundancy by removing outdated and duplicate content</li>
+          <li>Simplified access to information with unified navigation</li>
+          <li>Maintained clarity between two business units while merging platforms</li>
+          <li>Improved efficiency for both partners and internal teams</li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/outcomes-clientb.png" alt="Outcomes illustration placeholder">
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
