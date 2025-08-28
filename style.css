@@ -105,3 +105,13 @@
       section.card {
         margin-bottom: 3rem;
       }
+
+      .large-img {
+        width: 600px;     /* puedes subir a 700–800 si quieres aún más grande */
+        max-width: 100%;  /* mantiene que no se desborde en pantallas chicas */
+        height: auto;     /* mantiene proporción */
+        display: block;
+        margin: 0 auto;   /* lo centra */
+      }
+      
+      
