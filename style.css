@@ -113,5 +113,12 @@
         display: block;
         margin: 0 auto;   /* lo centra */
       }
+
+      .process-images {
+        margin-top: 2rem;
+      }
       
+      .process-images figure {
+        margin-bottom: 3rem; /* espacio grande entre cada bloque */
+      }
       
