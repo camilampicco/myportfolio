@@ -122,3 +122,29 @@
         margin-bottom: 3rem; /* espacio grande entre cada bloque */
       }
       
+      .image-block {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      
+      .image-block h4 {
+        margin-bottom: 0.5rem;
+      }
+      
+      .image-block .image-desc {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin-bottom: 1rem;
+      }
+      
+      .image-block img.styled-img {
+        max-width: 800px;   /* controla el tamaño máximo en desktop */
+        width: 100%;        /* responsivo */
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* sombra suave */
+        border: 1px solid #ececec;                   /* borde claro */
+        display: block;
+        margin: 0 auto 2rem auto;  /* centrado + espacio inferior */
+      }
+      
