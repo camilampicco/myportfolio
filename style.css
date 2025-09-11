@@ -147,4 +147,44 @@
         display: block;
         margin: 0 auto 2rem auto;  /* centrado + espacio inferior */
       }
+
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start; /* brand + links aligned left */
+          gap: 12px;
+        }
+      
+        nav .links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+      
+        nav a.button {
+          padding: .5rem .9rem;
+          font-size: 0.95rem;
+        }
+      }
+      
+      @media (max-width: 700px) {
+        .hero {
+          flex-direction: column;      /* apila texto y foto */
+          align-items: flex-start;     /* alinear a la izquierda */
+        }
+      
+        .hero > div:last-child {
+          order: 2;                    /* foto va abajo */
+          margin-top: 1.5rem;          /* espacio extra */
+          flex: unset;                 /* que no fuerce ancho fijo */
+          width: 100%;                 /* ocupa todo el ancho */
+          max-width: 280px;            /* opcional, controla el tamaño */
+          align-self: center;          /* centra la imagen */
+        }
+      
+        .hero > div:first-child {
+          order: 1;                    /* texto arriba */
+        }
+      }
       
