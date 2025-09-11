@@ -168,3 +168,23 @@
         }
       }
       
+      @media (max-width: 700px) {
+        .hero {
+          flex-direction: column;      /* apila texto y foto */
+          align-items: flex-start;     /* alinear a la izquierda */
+        }
+      
+        .hero > div:last-child {
+          order: 2;                    /* foto va abajo */
+          margin-top: 1.5rem;          /* espacio extra */
+          flex: unset;                 /* que no fuerce ancho fijo */
+          width: 100%;                 /* ocupa todo el ancho */
+          max-width: 280px;            /* opcional, controla el tamaño */
+          align-self: center;          /* centra la imagen */
+        }
+      
+        .hero > div:first-child {
+          order: 1;                    /* texto arriba */
+        }
+      }
+      
