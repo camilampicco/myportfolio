@@ -188,5 +188,23 @@
         }
       }
 
+
+.small-img {
+  max-width: 500px;   /* keeps it compact on desktop */
+  width: 100%;        /* responsive */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid #eaeaea;
+  margin: 1rem auto;  /* centers and adds space */
+  display: block;
+}
+
+.image-block h3 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
       
       
