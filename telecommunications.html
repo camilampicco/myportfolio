@@ -49,9 +49,8 @@
         </div>
         <!-- Menu (top-right buttons) -->
         <div class="links" aria-label="Sections">
-          <a class="button" href="#context">Context</a>
-          <a class="button" href="#challenge">Challenge</a>
-          <a class="button" href="#ia">IA</a>
+          <a class="button" href="#overview">Overview</a>
+          <a class="button" href="#process">Process</a>
           <a class="button" href="#outcomes">Outcomes</a>
         </div>
       </nav>
@@ -87,14 +86,19 @@
       </div>
     </div>
 
-    <!-- Context -->
-    <section id="context" class="card fade-in two-columns">
+    <!-- Overview -->
+    <section id="overview" class="card fade-in two-columns">
       <div>
-        <h2>Context</h2>
+        <h2>Overview</h2>
         <p>
           BT EE manages two core business areas. Each had its own PRM (Partner Relationship Management) system, 
           but this created inefficiencies: duplicated content, outdated information, and a fragmented user experience.  
           To solve this, the company decided to merge both PRMs into a single unified platform.
+        </p>
+        <p>
+          Defining a clear information architecture was a critical step in the redesign of the PRM.  
+          The objective was to reduce duplication, simplify navigation, and provide a structure that 
+          would serve both internal teams and external partners efficiently.
         </p>
       </div>
       <div>
@@ -102,79 +106,50 @@
       </div>
     </section>
 
-    <!-- Challenge -->
-    <section id="challenge" class="card fade-in two-columns">
+    <!-- Process -->
+    <section id="Process" class="card fade-in two-columns">
       <div>
-        <h2>Challenge</h2>
-        <p>
-          The original PRM hosted both business units in visibly separated sections, leading to redundancy and confusion.  
-          The redesign needed to:
+        <h2>Cardsorting & Tree Testing Process</h2>
+          <p>
+            To validate whether this content organization and labeling made sense to users, we applied the 
+          <strong>card sorting</strong> method using Optimal Workshop.
         </p>
-        <ul>
-          <li>Consolidate all content into one streamlined system</li>
-          <li>Preserve clarity between <strong>BT</strong> and <strong>EE</strong></li>
-          <li>Improve usability and efficiency for internal teams and external partners</li>
-        </ul>
-      </div>
-      <div>
-      <!--   <img src="images/challenge.png" alt="Challenge diagram placeholder"> -->
-      </div>
-    </section>
-
-  <!-- Information Architecture -->
-    <section id="ia" class="card fade-in two-columns">
-      <div>
-        <h2>Information Architecture</h2>
         <p>
-          Defining a clear information architecture was a critical step in the redesign of the PRM.  
-          The objective was to reduce duplication, simplify navigation, and provide a structure 
-          that would serve both internal teams and external partners efficiently.
+          We chose an <strong>open, remote, unmoderated card sort</strong>. The first round included 
+          <strong>30 cards</strong> and <strong>10 participants</strong>.
         </p>
-        <div class="card image-block">
-          <h3>Initial Information Architecture</h3>
-          <img src="assets/btee_firstIA.png" 
-              alt="Initial Information Architecture" 
+      </div>
+      <div class="card image-block">
+        <h3>Initial Information Architecture</h3>
+        <img src="assets/btee_firstIA.png" 
+            alt="Initial Information Architecture" 
+            class="styled-img small-img">
+      </div>
+      <p>
+        The findings were validated with a <strong>tree testing</strong> analysis, which measured 
+        how easily users could locate specific information within the proposed structure.  
+        Based on these insights, the information architecture was refined and iterated from the initial concept.
+      </p> 
+      <div class="card image-block">
+        <img  src="assets/results_treetesting.PNG" 
+              alt="results_treetesting"
               class="styled-img small-img">
-        </div>
-        <p>
-          To validate whether this content organization and labeling make sense to users, we applied the 
-          <strong>card sorting</strong> method.
-        </p>
-        <p>
-          We chose an <strong>open, remote, unmoderated card sort</strong>, conducted through the tool 
-          Optimal Workshop.
-        </p>    
-        <p>
-          The first round included <strong>30 cards</strong> and <strong>10 participants</strong>.
-        </p> 
-        <p>
-          The findings were validated with a <strong>tree testing</strong> analysis, which measured 
-          how easily users could locate specific information within the proposed structure.  
-          Based on these insights, the information architecture was refined and iterated from the initial concept.
-        </p> 
-        <div class="card image-block">
-          <img  src="assets/results_treetesting.PNG" 
-                alt="results_treetesting"
-                class="styled-img small-img">
-          </div>
-        <div class="card image-block">
-          <h3>Information Architecture Iteration</h3>
-          <img src="assets/btee_iteration.png" 
-              alt="Information Iteration" 
-              class="styled-img small-img">
-        </div>
-        <p>
-          To bring the architecture to life, <strong>wireframes</strong> were created for both desktop 
-          and mobile views. 
-        </p>
-        <p>
-          Finally, a dedicated workshop with the developer was held, and a comprehensive 
-          specification document was delivered. This outlined content organization, interaction patterns, 
-          design considerations, and the technical features required to implement the final PRM.  
-        </p>
       </div>
-      <!--  <img src="images/information-architecture.png" 
-            alt="Information Architecture diagram illustrating the PRM structure"> --> 
+      <div class="card image-block">
+        <h3>Information Architecture Iteration</h3>
+        <img src="assets/btee_iteration.png" 
+            alt="Information Iteration" 
+            class="styled-img small-img">
+      </div>
+      <p>
+        To bring the architecture to life, <strong>wireframes</strong> were created for both desktop 
+        and mobile views. 
+      </p>
+      <p>
+        Finally, a dedicated workshop with the developer was held, and a comprehensive 
+        specification document was delivered. This outlined content organization, interaction patterns, 
+        design considerations, and the technical features required to implement the final PRM.  
+      </p>
     </section>
 
     <!-- Outcomes -->
@@ -184,9 +159,10 @@
         <ul>
           <li>Reduced content redundancy by <strong>45%</strong>, eliminating more than <strong>50 outdated and duplicate entries</strong></li>
           <li>Improved findability, with <strong>68% faster task completion</strong> in tree testing compared to the original PRM</li>
-          <li>Unified navigation lowered support requests by <strong>25%</strong> within the first 3 months after launch</li>
           <li>Increased partner satisfaction scores from <strong>3.2 to 4.4 out of 5</strong> in post-launch surveys</li>
-          <li>Boosted efficiency for internal teams, saving an estimated <strong>10+ hours per week</strong> in content management</li>
+          <li>Users consistently found “logos” under <em>Assets</em> (40% → 92%)</li>
+          <li>Ambassador journey unified under <em>Incentives</em>, reducing confusion</li>
+          <li>Terms & Conditions relocated to <em>Help</em>, matching user expectations</li>
         </ul>            
       <!--  <img src="images/outcomes-clientb.png" alt="Outcomes illustration placeholder"> -->
       </div>
