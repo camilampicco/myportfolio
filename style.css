@@ -26,7 +26,6 @@
     nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
     nav .brand{display:flex; align-items:center; gap:14px}
     .brand .dot{width:12px; height:12px; background:var(--accent); border-radius:50%}
-    nav a.button{padding:.6rem 1rem; border-radius:999px; border:1px solid #d9d8d2; background:var(--card); box-shadow:var(--shadow)}
     .skip{position:absolute; left:-9999px}
     .skip:focus{left:12px; top:12px; background:#fff; padding:8px 12px; border-radius:10px; outline:2px solid var(--accent)}
 
@@ -86,7 +85,7 @@
         flex-wrap: wrap;
         justify-content: flex-start; /* alineadas a la izquierda */
         gap: .5rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       
       /* Cada pill */
@@ -205,6 +204,115 @@
   margin-bottom: 0.75rem;
   font-size: 1.05rem;
 }
+
+header {
+  background: var(--accent);   /* color del banner */
+  padding: 1.2rem 2rem;        /* margen interno arriba y abajo */
+  margin: 0;                   /* elimina cualquier espacio extraño */
+  width: 100%;                 /* ocupa todo el ancho */
+}
+
+.banner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;   /* opcional: centra el contenido dentro */
+  margin: 0 auto;
+}
+
+.banner-nav .brand {
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.banner-nav .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+}
+
+.banner-nav .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner-nav .links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.banner-nav .links a:hover {
+  opacity: 0.7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;             /* se mantiene sobre otros elementos */
+  background: var(--accent); /* color del banner */
+  padding: 1.2rem 2rem;      /* margen interno arriba y abajo */
+  width: 100%;               /* ocupa todo el ancho */
+}
+
+.banner-nav .brand a {
+  color: #fff !important;   /* blanco */
+  font-weight: 700;         /* negrita */
+  text-decoration: none;    /* sin subrayado */
+}
+
+.banner-nav .brand a:hover {
+  opacity: 0.8;             /* efecto hover sutil */
+}
+
+
+/* Hover efecto elegante para cada pill */
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .45rem .75rem;
+  border-radius: 999px;
+  border: 1px solid #e6e4df;
+  background: var(--bg-alt);
+  font-size: .92rem;
+  margin: .25rem;
+  transition: all 0.25s ease-in-out;
+  cursor: default;
+}
+
+.pill:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(15, 118, 110, 0.15);
+  background: var(--accent-2);
+  color: #fff;
+  border-color: var(--accent-2);
+}
+
+/* Títulos de grupos con iconos más grandes y elegantes */
+.skills-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.skills-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem; /* más cerca de sus pills */
+}
+
 
 
 

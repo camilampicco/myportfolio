@@ -35,19 +35,17 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header>
-    <div class="container">
-      <nav aria-label="Primary">
-        <div class="brand">
-          <span class="dot" aria-hidden="true"></span>
-          <strong>Camila María Picco</strong>
-        </div>
-        <div class="links" aria-label="Sections">
-          <a class="button" href="#work">Work</a>
-          <a class="button" href="#skills">Skills</a>
-          <a class="button" href="#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
+    <nav class="banner-nav" aria-label="Primary">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Camila María Picco</strong>
+      </div>
+      <div class="links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main id="main" class="container">
@@ -56,19 +54,12 @@
       <!-- Contenido principal -->
       <div class="card fade-in" style="flex: 1;">
         <h1>UX Researcher</h1>
-        <p class="subtitle">3.5 years in UX Research • London, UK • EU Settlement Scheme</p>
+        <p class="subtitle">3.5 years shaping digital experiences through evidence-based UX Research.</p>
         <div class="kpis" role="list" aria-label="Highlights">
-          <div class="kpi" role="listitem">Qualitative research</div>
-          <div class="kpi" role="listitem">Quantitative research</div>
-          <div class="kpi" role="listitem">HTML, CSS & Javascript knowledge</div>
+          <div class="kpi" role="listitem"><strong>🧑‍🔬Mixed-methods research:</strong> qualitative & quantitative</div>
+          <div class="kpi" role="listitem"><strong>💻 Coding-aware collaborator:</strong> HTML, CSS & JavaScript</div>
+          <div class="kpi" role="listitem"><strong>🗂 Specialised in:</strong> Information Architecture & Usability Testing</div>
         </div>
-        <div class="pills-container">
-            <span class="pill">Human-centred design</span>
-            <span class="pill">Heuristics & UX Laws</span>
-            <span class="pill">IA & Navigation</span>
-            <span class="pill">Usability testing</span>
-            <span class="pill">Coding-aware collaboration</span>
-          </div>
       </div>
   
       <div style="flex: 0 0 200px;">
@@ -80,7 +71,6 @@
     <section id="work">
       <h2>Selected Work</h2>
       <div class="grid cols-3">
-
         <article class="card case" data-type="research">
             <h3>
                 <a href="adobe.html" class="card-link">
@@ -88,7 +78,8 @@
                 </a>
             </h3>
           <p class="meta">Adobe - 10 partners • 2 cycles • Lead UX Research</p>
-          <p>Designed and ran end‑to‑end usability testing across two cycles for 10 partners. Created research plans, recruited participants, synthesised quantitative & qualitative findings, and prioritised recommendations.</p>
+          <p>Led two full research cycles with 10 international partners. Defined study objectives with stakeholders, 
+            designed end-to-end usability testing protocols, and recruited representative users.</p>
           <div class="tags">
             <span class="tag">Research plan</span>
             <span class="tag">Usability testing</span>
@@ -114,9 +105,9 @@
             </h3>
             <p class="meta">BTEE • UX Research • Cardsorting • Tree Testing • Quantitative Data</p>
             <p>
-              Led the redesign of BT EE Partner Relationship Management platform, merging two core businesses into a single PRM. 
-              Reduced duplication, streamlined content, and created a new unified Assets page. 
-              Applied design thinking with iterative user testing to validate improvements.
+              Conducted a full information architecture evaluation of BT EE’s PRM platform, combining traffic analytics with heuristic review. 
+              Findings revealed duplicated, outdated content and friction in navigation. Applied card sorting and tree testing 
+              with real users to reorganise the structure, unify two business divisions, and create a centralised Assets hub.
             </p>
             <div class="tags">
               <span class="tag">Information Architecture</span>
@@ -229,39 +220,59 @@
 
     <section id="skills">
       <h2>Skills & Tools</h2>
-      <div class="skills">
-        <span class="skill">Remote Usability Testing</span>
-        <span class="skill">Journey Map</span>
-        <span class="skill">Competitive Analysis</span>
-        <span class="skill">User Persona</span>
-        <span class="skill">Wireframe</span>
-        <span class="skill">Digital Protoype</span>
-        <span class="skill">Survey</span>
-        <span class="skill">UX Writing</span>
-        <span class="skill">Heuristic Evaluation</span>
-        <span class="skill">Information Architecture</span>
-        <span class="skill">Atomic Design</span>
-        <span class="skill">Grid Systems</span>
-        <span class="skill">Figma</span>
-        <span class="skill">Whimsical</span>
-        <span class="skill">Optimal Workshop</span>
-        <span class="skill">Agile SCRUM</span>
-        <span class="skill">Waterfall</span>
-        <span class="skill">HTML5</span>
-        <span class="skill">CSS</span>
-        <span class="skill">SASS</span>
-        <span class="skill">Bootstrap</span>
-        <span class="skill">Git/GitHub</span>
-        <span class="skill">VS Code</span>
-        <span class="skill">SQL Basics</span>
+    
+      <!-- User Research -->
+      <div class="skills-group">
+        <h3>🧑‍🔬 User Research</h3>
+        <div class="pills-container">
+          <span class="pill">Usability Testing</span>
+          <span class="pill">Interviews</span>
+          <span class="pill">Surveys</span>
+          <span class="pill">Journey Mapping</span>
+          <span class="pill">User Persona</span>
+        </div>
+      </div>
+    
+      <!-- Information Architecture -->
+      <div class="skills-group">
+        <h3>🏗 Information Architecture</h3>
+        <div class="pills-container">
+          <span class="pill">Card Sorting</span>
+          <span class="pill">Tree Testing</span>
+          <span class="pill">Navigation Redesign</span>
+          <span class="pill">Heuristic Evaluation</span>
+        </div>
+      </div>
+    
+      <!-- Design Collaboration -->
+      <div class="skills-group">
+        <h3>🎨 Design Collaboration</h3>
+        <div class="pills-container">
+          <span class="pill">Wireframes</span>
+          <span class="pill">Digital Prototypes</span>
+          <span class="pill">Atomic Design</span>
+          <span class="pill">Accessibility Checks</span>
+        </div>
+      </div>
+    
+      <!-- Tooling & Delivery -->
+      <div class="skills-group">
+        <h3>🛠 Tooling & Delivery</h3>
+        <div class="pills-container">
+          <span class="pill">Figma</span>
+          <span class="pill">Whimsical</span>
+          <span class="pill">Optimal Workshop</span>
+          <span class="pill">Git/GitHub</span>
+          <span class="pill">SQL Basics</span>
+          <span class="pill">Agile / SCRUM</span>
+        </div>
       </div>
     </section>
-
-    
-
+  
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
+        <p><strong>EU Settlement Scheme granted</strong></p>
         <p><strong>Location:</strong> London, UK</p>
         <p><strong>Phone:</strong> <a href="tel:+447706802644">+44 07706802644</a></p>
         <p><strong>Email:</strong> <a href="mailto:camilamariapicco@gmail.com">camilamariapicco@gmail.com</a></p>
@@ -276,5 +287,6 @@
   </main>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>
