@@ -85,7 +85,7 @@
         flex-wrap: wrap;
         justify-content: flex-start; /* alineadas a la izquierda */
         gap: .5rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       
       /* Cada pill */
@@ -302,8 +302,17 @@ header {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.15rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
+
+.skills-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem; /* más cerca de sus pills */
+}
+
 
 
 
