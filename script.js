@@ -1,13 +1,11 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', () => {
     console.log('scripts.js loaded');
   });
 
-  
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    /*** 1️⃣ KPIs y Pills que se iluminan al entrar en la vista ***/
+    /*** KPIs y Pills que se iluminan al entrar en la vista ***/
     const interactiveElements = document.querySelectorAll('.kpi, .pill');
   
     const observer = new IntersectionObserver(entries => {
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     interactiveElements.forEach(el => observer.observe(el));
   
-    /*** 2️⃣ Microinteracción hover en Pills ***/
+    /*** Microinteracción hover en Pills 
     interactiveElements.forEach(el => {
       el.addEventListener('mouseenter', () => {
         el.style.transform = 'translateY(-2px) scale(1.05)';
@@ -32,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = '';
         el.style.boxShadow = '';
       });
-    });
+    });***/
   
-    /*** 3️⃣ Acordeón para timeline o tareas ***/
+    /*** Acordeón para timeline o tareas ***/
     const tItems = document.querySelectorAll('.t-item');
     tItems.forEach(item => {
       item.addEventListener('click', () => {
@@ -42,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    /*** 4️⃣ Hover dinámico en imágenes ***/
+    /*** Hover dinámico en imágenes ***/
     const images = document.querySelectorAll('.large-img, .styled-img, .small-img');
     images.forEach(img => {
       img.addEventListener('mouseenter', () => {
@@ -55,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    /*** 5️⃣ Tooltips dinámicos para KPIs o Pills ***/
+    /*** Tooltips dinámicos para KPIs o Pills ***/
     interactiveElements.forEach(el => {
       el.addEventListener('mouseenter', e => {
         const tooltipText = el.getAttribute('data-tooltip');
@@ -76,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    /*** 6️⃣ Scroll progress bar ***/
+    /*** Scroll progress bar ***/
     window.addEventListener('scroll', () => {
       const scrollTop = window.scrollY;
       const docHeight = document.body.scrollHeight - window.innerHeight;
@@ -85,4 +83,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
   });
+
+    document.querySelectorAll('.card.case').forEach(card => {
+        const link = card.querySelector('h3 a');
+        if (!link) return;
+    
+        // Click en la card redirige
+        card.addEventListener('click', () => {
+        window.location.href = link.href;
+        });
+    
+        // Evitar que click dentro de details haga trigger en la card
+        card.querySelectorAll('details, details *').forEach(el => {
+        el.addEventListener('click', e => e.stopPropagation());
+        });
+    });
+    
   
